@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control Button</title>
+    <link rel="stylesheet" href="RobotControl.css">
+</head>
+<body>
+
+    <div id="header">
+        <div class="HeaderTitel">
+            <h1> Robot Controler </h3>
+        </div>
+        <div class="icon" >
+             <img  src="robot1.png" alt="robot pic here" width="60px" height="60px">
+        </div>
+       
+    </div>
+
+    <!-- Robot -->
+    <h2 id="movingWord">Press the button to control the robot</h3>
+    <div >
+        
+        <img id="robot" src="robot.png" alt="robot pic here" width="100px" height="110px">
+    </div>
+
+    <!-- Forwarded-->
+    <div id="Forwarede" >
+        <button class="button" onclick="MoveForwarded()">Forward</button>
+    </div>
+
+     <!-- Left-->
+    <div id="Left">
+        <button class="button" onclick="MoveLeft()">Left</button>
+        
+    </div>
+
+     <!-- Stop-->
+     <div id="Stop">
+        <button id="Sbutton" onclick="Stop()">Stop</button>
+    </div>
+
+     <!-- Right-->
+    <div id="Right"> 
+        <button class="button" onclick="MoveRight()">Right</button>
+    </div>
+
+    <!-- Back-->
+    <div id="Back">
+        <button class="button" onclick="MoveBack()">Back</button>
+    </div>
+
+    
+    <script src="robot.js"></script>
+
+</body>
+</html>
